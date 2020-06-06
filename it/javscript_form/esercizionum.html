@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html >
+  <head>
+
+    <title></title>
+  </head>
+  <body>
+    <SCRIPT language="javascript">
+        var x, n, i=0,nm=0,nmin=0,nug=0,num
+        {
+      n=prompt("Quanti numeri vuoi inserire?")
+      x=prompt("inserisci il numero x")
+    }
+      while(i<n){
+        i++
+        num=prompt("Inserisci numero:")
+        if (num>x) {
+          nm++
+        }
+        if (num<x) {
+          nmin++
+        }
+        if (num==x) {
+          nug++
+        }
+      }
+      document.write("I numeri maggiori di x sono: "+nm+" <br> I numeri minori di x sono: "+nmin+" <br> I numeri uguali a x sono: "+nug)
+      </script>
+  </body>
+</html>

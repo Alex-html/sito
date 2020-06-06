@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#DICIAMOUNITI</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+        <!--Font Comfortaa-->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comfortaa">
+        <!--Materialize-->
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <!--animations-->
+        <link rel="stylesheet" href="css/aos.css" >
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <!--Material icons-->
+        <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.5.95/css/materialdesignicons.min.css">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <script src="js/jquery.min.js"></script>
+
+    <script>
+      var diciamo=0
+      var no="bravo sta volta ti sei superato,hai rotto i coglioni con sti diciamo!!"
+      function conta(){
+        diciamo=diciamo+1
+        if (diciamo%350==0) {
+          document.getElementById("oidocrop").innerHTML = no
+            document.getElementById('morte').style.display="inline"
+        }else {
+          document.getElementById("oidocrop").innerHTML =" "
+            document.getElementById('morte').style.display="none"
+        }
+    document.getElementById("diciamo").innerHTML = diciamo
+
+      }
+
+    </script>
+
+
+
+
+  </head>
+  <body background="img/sfondo_tech.jpg">
+
+    <nav >
+     <div class="nav-wrapper red spazio ">
+       <a href="index.html" class="brand-logo Comfortaa center-on-small-only "><img src="img/logo.png"  height="50" width="50" class="img_nav rotondo " align="center"  ></a>
+       <a href="" data-target="mobile-demo" class="sidenav-trigger"><i class=" black-text mdi mdi-menu"></i></a>
+       <ul class="right hide-on-med-and-down">
+         <li><a href="game_app.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-gamepad-variant"></i>app & giochi</a></li>
+         <li><a href="" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i> I.T.</a></li>
+         <li><a href="#contactForm" class="Comfortaa black-text hoverable "><i class="right mdi mdi-instagram"></i>contact</a></li>
+           <li><a href="info.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information" ></i>info</a></li>
+     </div>
+   </nav>
+
+   <ul class="sidenav" id="mobile-demo">
+     <li><a href="game_app.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-gamepad-variant"></i>app & giochi</a></li>
+     <li><a href="" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i> I.T.</a></li>
+     <li><a href="#contactForm" class="Comfortaa black-text hoverable"><i class="right mdi mdi-instagram"></i>contact</a></li>
+       <li><a href="info.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information " ></i> info</a></li>
+   </ul>
+
+<!-- style="  background-image: url(https://media.giphy.com/media/z1HdiobjzYIrm/giphy.gif);background-repeat: no-repeat ; background-size: contain; background-position:left;"-->
+
+      <!-- background-image: url(https://media.giphy.com/media/4T9gcLOEuPDZzHeINz/giphy.gif);-->
+    <br>
+    <div><center><font color="blue"><h3>DICIAMO: </h3><h3><span id='diciamo'>0</span></h3></font></center></div>
+      <br>
+        <div><center><span id='oidocrop'></span></center></div>
+        <br>
+    <center> <a class="btn-floating btn-large waves-effect waves-light red" onclick='conta()'><i class="material-icons">add</i></a></center>
+    <center><img src="coffin_dance.gif" id='morte' style="display:none"></center>
+
+    <footer class="page-footer red" style="display:none">
+            <div class="container">
+              <form id="contactForm" class="rounded hoverable black-text white" action="https://formspree.io/mlejbjpa" method="POST">
+         </div>
+         <div class="col l4 offset-l2 s12 center" >
+           <i class=""></i><h4 class="animated infinite heartbeat">follow me:</h4>
+
+         </div>
+         <div class="center red">
+           <a href="https://www.instagram.com/alefolinea/" class="Comfortaa black-text hoverable"><i class=" small center mdi mdi-instagram"  ></i></a> <a href="">  <i class="small center mdi mdi-facebook-box"></i></a>
+
+         </div>
+
+                         <div class="footer-copyright black-text red center ">
+                         <div class="container red centerText"><br>
+                         <i class="mdi mdi-copyright"></i> <span id="year">yyyy</span> - Alex.html -
+                         </div>
+                       </div>
+                     </footer>
+   	 <!--Javascript things-->
+     <script src="js/lazyload.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>AOS.init({disable: 'mobile'});</script>
+    <script src="js/date.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/btt.js"></script>
+
+
+   <script type="text/javascript" src="js/jquery.cookie.js"></script>
+  </body>
+</html>

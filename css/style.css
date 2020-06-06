@@ -1,0 +1,300 @@
+
+
+
+#schermata_caricamento {
+
+  width: 100%;
+
+  height:100%;
+
+  position:fixed;
+
+  top:0;
+
+  left:0;
+
+  background-color:#fff;
+
+  background-image:url(https://acegif.com/wp-content/uploads/loading-95.gif);
+
+  background-repeat:no-repeat;
+
+  background-position:center;
+
+}
+#schermata_caricamento1 {
+
+  width: 100%;
+
+  height:100%;
+
+  position:fixed;
+
+  top:0;
+
+  left:0;
+
+  background-color:#fff;
+
+  background-image:url(https://acegif.com/wp-content/uploads/loading-62.gif);
+
+  background-repeat:no-repeat;
+
+  background-position:center;
+}
+#overlay {
+position: fixed;
+top: 0;
+left: 0;
+display: none;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.65);
+z-index: 999;
+-webkit-animation: fade .6s;
+-moz-animation: fade .6s;
+animation: fade .6s;
+overflow: auto;
+
+}
+
+#loading_screen
+{
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+  padding: 80px;
+  background-color: #000;
+  backgground-color: rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+}
+#loading_screen1
+{background-size: 100% 100%;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+  padding: auto;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, .5);
+  background-image: url(https://acegif.com/wp-content/uploads/loading-95.gif);
+  background-repeat:no-repeat;
+  background-position:center;
+    position:fixed;
+  box-sizing: border-box;
+}
+#loading_screen2
+{background-size: 100% 100%;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+  padding: auto;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, .5);
+  background-image: url(https://cdn.dribbble.com/users/621155/screenshots/2835314/simple_pokeball.gif);
+  background-repeat:no-repeat;
+  background-position:center;
+    position:fixed;
+  box-sizing: border-box;
+}
+
+.sfondo{
+  background-image: url(https://media3.giphy.com/media/AcQBDzT3hvA1dZFGG4/giphy.webp?cid=790b7611c4c76f6260d2b550ea80100bb02726ce09dd467f&rid=giphy.webp);
+  background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: 100% 100%;
+}
+.sfondo2{
+  background-image: url(https://33.media.tumblr.com/7f89dc2af4f3b4419f62e1deb3018ada/tumblr_miujm6I8nY1r72ht7o1_500.gif);
+  background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+}
+.sfondo1{
+  background-image: url(https://media3.giphy.com/media/z8OcWLLk4SrpS/giphy.gif);
+  background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: 100% 100%;
+}
+.sfondo3{
+  background-image: url(https://thumbs.gfycat.com/MediumQuarrelsomeClingfish-small.gif);
+  background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: 75% 65%;
+ background-color: black;
+ background-position: center;
+}
+.newstile{
+  text-align: justify;
+  font-style: italic;
+  font-family: sans-serif;
+  color: blue;
+  font-size: 20px;
+}
+.nav-wrapper{
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.pTop{
+  padding-top: 1%;
+}
+
+.pBottom{
+  padding-bottom: 2%;
+}
+.noMargin{
+  margin: 0;
+}
+
+.blueColor{
+  background-color: #0099ff;
+}
+
+.centerText{
+  text-align: center;
+}
+
+#Tpath{
+  position: relative;
+  top: 1vh;
+}
+
+h1{
+    font-size: 2.8rem !important;
+  }
+
+  h3{
+    font-size: 1.8rem !important;
+  }
+
+  @media screen and (min-width: 321px){
+    h1{
+      font-size: 3rem !important;
+    }
+    h3{
+      font-size: 2rem !important;
+    }
+}
+
+@media screen and (min-width: 500px){
+  h1{
+    font-size: 5rem !important;
+  }
+  h3{
+    font-size: 3rem !important;
+  }
+}
+
+/* label color */
+ .input-field label {
+   color: #000 !important;
+ }
+
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+   color: #000 !important;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus {
+   border-bottom: 1px solid #000 !important;
+   box-shadow: 0 1px 0 0 #000 !important;
+ }
+
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+   color: #000 !important;
+ }
+
+ /* label focus color */
+ .input-field input[type=email]:focus + label {
+   color: #000 !important;
+ }
+
+ /* label underline focus color */
+ .input-field input[type=email]:focus {
+   border-bottom: 1px solid #000 !important;
+   box-shadow: 0 1px 0 0 #000 !important;
+ }
+
+ /* label underline focus color */
+ .materialize-textarea:focus {
+   border-bottom: 1px solid #000 !important;
+   box-shadow: 0 1px 0 0 #000 !important;
+ }
+
+.rounded{
+  border-radius: 40px;
+}
+.rotondo{
+  border-radius: 50%;
+}
+.popup {
+top: 25%;
+left: 0;
+right: 0;
+font-size: 14px;
+margin: auto;
+width: auto;
+min-width: 320px;
+max-width:650px;
+position: absolute;
+padding: 15px 20px;
+border: 1px solid #383838;
+background: #fefefe;
+z-index: 1000;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+-ms-border-radius: 20px;
+border-radius: 20px;
+font: 14px/18px 'Tahoma', Arial, sans-serif;
+-webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+-moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+-ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+-webkit-animation: fade .6s;
+-moz-animation: fade .6s;
+animation: fade .6s;
+}
+.close {
+top: 10px;
+right: 10px;
+width: 32px;
+height: 32px;
+position: absolute;
+border: none;
+border-radius: 50%;
+background-color: red;
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+cursor: pointer;
+outline: none;
+}
+
+.close:before {
+color: rgba(255, 255, 255, 0.9);
+content: "X";
+font-family:  Arial, Helvetica, sans-serif;
+font-size: 14px;
+font-weight: normal;
+text-decoration: none;
+text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+transition: all 0.5s;
+}
+/* cambio del clore del bottone di chiusura al passagio del mose */
+.close:hover {
+background-color: orange;
+}

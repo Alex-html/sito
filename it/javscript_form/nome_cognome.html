@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <SCRIPT languange="javascript">
+      function maiuscolo(){
+         var cognome=document.getElementById('cognome').value
+        document.getElementById('cognome').value=cognome.toUpperCase()
+      }
+      function conta(){
+        var nome= document.getElementById('nome').value
+        if (nome!=0) {
+          document.getElementById('nome').value=nome.length+" caratteri"
+        }
+
+      }
+      </script>
+
+    <title>nome e cognome</title>
+  </head>
+  <body>
+
+    <form >
+      Nome <input id="nome"type="text" name="nome" onblur="conta()" > <br>
+    <br>  Cognome <input id='cognome' type="text" name="cognome" onblur="maiuscolo()">
+
+    </form>
+  </body>
+</html>

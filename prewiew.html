@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>#acasaeinsalute</title>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+        <!--Font Comfortaa-->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comfortaa">
+        <!--Materialize-->
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <!--animations-->
+        <link rel="stylesheet" href="css/aos.css" >
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <!--Material icons-->
+        <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.5.95/css/materialdesignicons.min.css">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+             <script src="js/jquery.min.js"></script>
+
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+             <style>
+             body {
+               background-repeat: no-repeat;
+            background-size: auto;
+           
+            background-image: url(https://sfondo.info/i/original/e/0/3/88436.jpg);
+}
+.center-div
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.mela{
+
+  width: 50%;
+  height: 50%;
+}
+
+.responsive {
+  width: auto;
+  max-width: 50%;
+  height: auto;
+  max-height: 50%;
+}
+
+#score {
+  margin-right: 5%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#par{
+  margin: 0;
+}
+
+.row{
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  font-size: 300%;
+  color: #00ff00;
+  margin: 0;
+}
+.row1{
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  font-size: 150%;
+  color: #caffac;
+  margin: auto;
+}
+
+.link{
+  color: #caffac;
+}
+
+a:visited {
+  text-decoration: none;
+  color: red;
+}
+
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+a:focus {
+  text-decoration: none;
+  color: yellow;
+}
+
+a {
+  color: red
+}
+
+/* Globally */
+
+/* Each state */
+
+a:visited {
+  text-decoration: none;
+  color: red;
+}
+
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+a:focus {
+  text-decoration: none;
+  color: yellow;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black
+}
+             </style>
+             <script>
+             var score = 0
+             var eatapples = 0
+             var i = 1;
+             var start_width = 0
+             var start_height = 0
+             function mangia_mela() {
+              score++
+              start_width = $("#apple").width()
+              start_height = $("#apple").height()
+              if(i == 0){
+                document.getElementById("apple").src = "img/apple/apple0.png";
+              }
+              if(i == 1){
+                document.getElementById("apple").src = "img/apple/apple1.png";
+              }
+              if(i == 2){
+                document.getElementById("apple").src = "img/apple/apple2.png";
+              }
+              if(i == 3){
+                document.getElementById("apple").src = "img/apple/apple3.png";
+              }
+              if(i == 4){
+                i=-1
+                document.getElementById("apple").src = "img/apple/apple4.png";
+              }
+              else{
+
+              }
+              i++
+              if(score % 5 == 0){
+                eatapples++
+              }
+              document.getElementById("score").innerHTML = eatapples
+
+              $("#apple").animate({
+                width: start_width * 2,
+                height: start_height * 2
+              }, 50)
+
+              $("#apple").animate({
+                width: start_width,
+                height: start_height
+              }, 50)
+
+              document.getElementById("score").disabled = false
+             }
+                      </script>
+
+
+
+  </head>
+  <body >
+    <nav >
+   <div class="nav-wrapper red spazio ">
+     <a href="index.html" class="brand-logo Comfortaa center-on-small-only "><img src="img/logo.png"  height="50" width="50" class="img_nav rotondo " align="center"  ></a>
+     <a href="" data-target="mobile-demo" class="sidenav-trigger"><i class=" black-text mdi mdi-menu"></i></a>
+     <ul class="right hide-on-med-and-down">
+       <li><a href="game_app.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-gamepad-variant"></i>app & giochi</a></li>
+       <li><a href="" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i> I.T.</a></li>
+       <li><a href="#contactForm" class="Comfortaa black-text hoverable "><i class="right mdi mdi-instagram"></i>contact</a></li>
+         <li><a href="info.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information" ></i>info</a></li>
+   </div>
+ </nav>
+
+ <ul class="sidenav" id="mobile-demo">
+   <li><a href="game_app.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-gamepad-variant"></i>app & giochi</a></li>
+   <li><a href="" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i> I.T.</a></li>
+   <li><a href="#contactForm" class="Comfortaa black-text hoverable"><i class="right mdi mdi-instagram"></i>contact</a></li>
+     <li><a href="info.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information " ></i> info</a></li>
+ </ul>
+ <center><h2><font color=""></font><font color="green">#</font><font color="white">D</font><font color="red">I</font><font color="green">V</font><font color="white">E</font><font color="red">R</font><font color="green">T</font><font color="white">I</font><font color="red">T</font><font color="green">I</font></h2></center>
+
+
+    <div class="row"><p id="par">Mele mangiate: <span id='score'>0</span></p></div>
+
+    <div class="center-div mela">
+      <img id="apple"   onclick='mangia_mela()' class="responsive center-div" src="img/apple/apple0.png" alt="">
+    </div>
+<div class="">
+
+</div>
+<div id="back-to-top"  class="fixed-action-btn">
+ <a class="btn-floating btn-large green">
+   <i class="mdi mdi-chevron-up"></i>
+ </a>
+</div>
+    <footer class="row1 red" style="position:absolute top:50%">
+            <div class="container">
+              <form id="contactForm" class="rounded hoverable black-text white" action="https://formspree.io/mlejbjpa" method="POST">
+         </div>
+         <div class="col l4 offset-l2 s12 center" >
+           <i class=""></i><h4 class="animated infinite heartbeat">follow me:</h4>
+
+         </div>
+         <div class="center red">
+           <a href="https://www.instagram.com/alefolinea/" class="Comfortaa black-text hoverable"><i class=" small center mdi mdi-instagram"  ></i></a> <a href="" class="Comfortaa black-text hoverable">  <i class=" small center mdi mdi-facebook-box"></i></a>
+
+         </div>
+
+                         <div class="footer-copyright black-text red center ">
+                         <div class="container red centerText"><br>
+                         <i class="mdi mdi-copyright"></i> <span id="year">yyyy</span> - Alex.html -
+                         </div>
+                       </div>
+                     </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+
+
+
+ <script src="js/lazyload.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/aos.js"></script>
+<script>AOS.init({disable: 'mobile'});</script>
+<script src="js/date.js"></script>
+<script src="js/main.js"></script>
+<script src="js/btt.js"></script>
+  </body>
+</html>

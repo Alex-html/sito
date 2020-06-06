@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  
+    <title></title>
+  </head>
+  <body>
+
+        <SCRIPT language="javascript">
+          {  var t, tm=0,tmin=1000,c,cmx="",cmin="",i=0}
+      do {
+        c=prompt("inserisci capoluogo")
+        t=prompt("temperatura massima")*1.0
+        if (t>tm) {
+          tm=t
+            cmx=c
+
+        }
+          t=prompt("temperatura minima")*1.0
+          if (t<tmin) {
+            tmin=t
+              cmin=c
+
+          }
+          i++
+      }while (i<20);
+      document.write("Il capoluogo con la temperatura massima e' "+cmx+" con una temperatura di "+tm+" °C <br> Il capoluogo con la temperatura minima e' "+cmin+" con una temperatura di "+tmin+" °C")
+
+
+
+
+    </script>
+  </body>
+</html>
